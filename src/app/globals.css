@@ -1,0 +1,110 @@
+@import "tailwindcss";
+
+@theme inline {
+  --color-background: #ffffff;
+  --color-foreground: #0a1628;
+
+  /* Brand Colors */
+  --color-brand-navy: #0a1628;
+  --color-brand-navy-light: #13294b;
+  --color-brand-teal: #00b4d8;
+  --color-brand-teal-dark: #0077b6;
+  --color-brand-gold: #d4a853;
+  --color-brand-gold-light: #e8c97a;
+
+  /* Surface Colors */
+  --color-surface-white: #ffffff;
+  --color-surface-off: #f8fafc;
+  --color-surface-muted: #f1f5f9;
+  --color-surface-border: #e2e8f0;
+
+  /* Text Colors */
+  --color-text-primary: #0a1628;
+  --color-text-secondary: #475569;
+  --color-text-muted: #94a3b8;
+
+  /* Fonts */
+  --font-sans: "Inter", system-ui, -apple-system, sans-serif;
+  --font-display: "Outfit", "Inter", sans-serif;
+  --font-mono: "JetBrains Mono", "Fira Code", monospace;
+}
+
+@layer base {
+  * {
+    @apply border-surface-border;
+  }
+
+  body {
+    @apply bg-surface-off text-text-primary font-sans antialiased;
+    overflow-x: hidden;
+  }
+
+  html {
+    scroll-behavior: smooth;
+  }
+}
+
+@layer utilities {
+  .glass {
+    @apply bg-white/70 backdrop-blur-md border border-white/20 shadow-lg;
+  }
+
+  .glass-dark {
+    @apply bg-brand-navy/80 backdrop-blur-md border border-white/10 shadow-lg text-white;
+  }
+
+  .glass-teal {
+    @apply bg-brand-teal/10 backdrop-blur-md border border-brand-teal/20 shadow-lg;
+  }
+
+  .text-edge-outline {
+    -webkit-text-stroke: 1px rgba(255, 255, 255, 0.5);
+    color: transparent;
+  }
+
+  .text-edge-outline-dark {
+    -webkit-text-stroke: 1px rgba(0, 0, 0, 0.15);
+    color: transparent;
+  }
+
+  .text-gradient {
+    @apply bg-clip-text text-transparent bg-gradient-to-r from-brand-teal to-brand-teal-dark;
+  }
+
+  .text-gradient-gold {
+    @apply bg-clip-text text-transparent bg-gradient-to-r from-brand-gold to-brand-gold-light;
+  }
+
+  .bg-grid-pattern {
+    background-image: linear-gradient(rgba(0, 180, 216, 0.05) 1px, transparent 1px),
+      linear-gradient(90deg, rgba(0, 180, 216, 0.05) 1px, transparent 1px);
+    background-size: 40px 40px;
+  }
+
+  .bg-grid-pattern-dark {
+    background-image: linear-gradient(rgba(255, 255, 255, 0.03) 1px, transparent 1px),
+      linear-gradient(90deg, rgba(255, 255, 255, 0.03) 1px, transparent 1px);
+    background-size: 40px 40px;
+  }
+
+  .hide-scrollbar::-webkit-scrollbar {
+    display: none;
+  }
+  .hide-scrollbar {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+  }
+
+  .custom-scrollbar::-webkit-scrollbar {
+    width: 6px;
+  }
+  .custom-scrollbar::-webkit-scrollbar-track {
+    background: transparent;
+  }
+  .custom-scrollbar::-webkit-scrollbar-thumb {
+    @apply bg-brand-teal/50 rounded-full;
+  }
+  .custom-scrollbar::-webkit-scrollbar-thumb:hover {
+    @apply bg-brand-teal;
+  }
+}
