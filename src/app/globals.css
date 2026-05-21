@@ -107,4 +107,23 @@
   .custom-scrollbar::-webkit-scrollbar-thumb:hover {
     @apply bg-brand-teal;
   }
+
+  /* 3D Transforms */
+  .preserve-3d {
+    transform-style: preserve-3d;
+  }
+
+  .backface-hidden {
+    backface-visibility: hidden;
+  }
+
+  .perspective-3d {
+    perspective: 1200px;
+  }
+
+  @media (max-width: 767px) {
+    .perspective-3d {
+      perspective: 600px;
+    }
+  }
 }

@@ -226,15 +226,15 @@ export const testimonials = [
 
 // ─── House Brands ───────────────────────────────────────────
 export const houseBrands = [
-  { name: "Zappy", tagline: "Personal Care & Home Hygiene" },
-  { name: "HospiCare", tagline: "Medical & Healthcare" },
-  { name: "Smartowel", tagline: "Foodservice & Hospitality" },
-  { name: "Alpak", tagline: "F&B Packaging Solutions" },
-  { name: "Ozuki", tagline: "Premium Lifestyle" },
-  { name: "Woosh", tagline: "On-the-Go Hygiene" },
-  { name: "Babyfresh", tagline: "Baby & Child Care" },
-  { name: "Hagens", tagline: "Industrial Hygiene" },
-  { name: "BlueSky", tagline: "Eco-Conscious Essentials" },
+  { name: "Zappy", tagline: "Personal Care & Home Hygiene", bio: "Zappy is Freshening's flagship consumer brand, delivering a comprehensive range of wet wipes, hand sanitizers, and disinfectant products for everyday personal and home care. Trusted by households and businesses across 38+ countries for reliable hygiene solutions." },
+  { name: "HospiCare", tagline: "Medical & Healthcare", bio: "HospiCare provides clinical-grade disinfection wipes, antiseptic solutions, and medical hygiene products manufactured in ISO 13485-certified facilities. Designed for hospitals, clinics, and healthcare environments where sterility is non-negotiable." },
+  { name: "Smartowel", tagline: "Foodservice & Hospitality", bio: "Smartowel is the go-to brand for foodservice professionals — offering food-contact-safe wipes, kitchen hygiene solutions, and tabletop cleaning products. Partnering with major F&B chains and hospitality groups worldwide." },
+  { name: "Alpak", tagline: "F&B Packaging Solutions", bio: "Alpak delivers eco-friendly food packaging and disposable tableware solutions. From biodegradable containers to sustainable cutlery, Alpak supports the F&B industry's transition toward greener operations without compromising quality." },
+  { name: "Ozuki", tagline: "Premium Lifestyle", bio: "Ozuki represents the premium tier of Freshening's portfolio — sophisticated personal care wipes and lifestyle hygiene products crafted with refined fragrances, luxurious materials, and elegant packaging for discerning consumers." },
+  { name: "Woosh", tagline: "On-the-Go Hygiene", bio: "Woosh is designed for the modern, mobile lifestyle. Compact, portable hygiene solutions including pocket-sized wipes and travel-friendly sanitizers that keep you fresh wherever life takes you." },
+  { name: "Babyfresh", tagline: "Baby & Child Care", bio: "Babyfresh specializes in ultra-gentle, dermatologically-tested baby wipes and child-safe hygiene products. Formulated with the mildest ingredients to protect delicate skin, giving parents complete peace of mind." },
+  { name: "Hagens", tagline: "Industrial Hygiene", bio: "Hagens powers industrial-scale hygiene with heavy-duty cleaning wipes, degreasing solutions, and workplace sanitation products. Built for factories, warehouses, and commercial facilities that demand industrial-strength performance." },
+  { name: "BlueSky", tagline: "Eco-Conscious Essentials", bio: "BlueSky is Freshening's sustainability-forward brand — 100% compostable wipes, plastic-free packaging, and plant-based formulations. Every product is designed to return to nature, aligning with the Singapore Green Plan 2030.", linkLabel: "Explore Ecosphere →", linkHref: "#ecosphere" },
 ];
 
 // ─── Product Categories ─────────────────────────────────────
